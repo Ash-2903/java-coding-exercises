@@ -1,9 +1,9 @@
-// java 17 
+// java 17
 
 public class PositiveNegativeorZero {
 
     public static void main(String[] args) {
-        
+        checkNumber(29);
     }
     
     public static void checkNumber( int num ) {
