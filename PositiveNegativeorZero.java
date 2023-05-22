@@ -1,4 +1,3 @@
-// using java 17
 
 public class PositiveNegativeorZero {
 
