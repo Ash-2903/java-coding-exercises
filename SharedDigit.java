@@ -1,22 +1,22 @@
 // The method should return true if there is a digit that appears in both numbers, such as 2 in 12 and 23; otherwise, the method should return false.
 
 public class SharedDigit {
-    public static boolean hasSharedDigit(int numA,int numB){
-        if((numA<10||numA>99)||(numB<10||numB>99)){
+    public static boolean hasSharedDigit( int num1,int num2 ){
+        if( (num1<10||num1>99) || (num2<10||num2>99) ){
             return false;
         }
-        int realNumB=numB;
-        while(numA>0){
-            int numADig=numA%10;
-            while(numB>0){
-                int numBDig=numB%10;
-                if(numADig==numBDig){
+        int realNum2 = num2;
+        while( num1>0 ){
+            int num1Digit = num1%10;
+            while( num2>0 ){
+                int num2Digit = num2%10;
+                if( num1Digit == num2Digit ){
                     return true;
                 }
-                numB=numB/10;
+                num2 = num2/10;
             }
-            numA=numA/10;
-            numB=realNumB;
+            num1 = num1/10;
+            num2 = realNum2;
         }
         return false;
     }
